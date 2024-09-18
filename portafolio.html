@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Diseñador Gráfico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Contenedor principal que utiliza Flexbox */
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Estilo del encabezado */
+        header {
+            background-color: #7673d3;
+            color: rgb(25, 46, 28);
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Estilo de la barra de navegación */
+        nav {
+            background-color: #333;
+            padding: 15px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Contenido principal */
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .content {
+            max-width: 800px;
+            text-align: center;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Portafolio de diseñador grafico</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#trabajos">Trabajos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="content">
+                <h2>Bienvenido a mi Portfolio</h2>
+                <p>Aquí encontrarás una selección de mis mejores trabajos como diseñador gráfico, así como información
+                    sobre mí y cómo contactarme.</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Portfolio de [Tu Nombre]. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

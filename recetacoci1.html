@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas de Cocina</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #1059a2;
+        }
+
+        header {
+            background-color: #81b8dc;
+            /* Color de fondo tomate */
+            color: rgb(16, 22, 103);
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .recipe {
+            background-color: rgb(188, 214, 228);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .recipe img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .recipe h2 {
+            margin-top: 0;
+            color: #891c09;
+            /* Color de título */
+        }
+
+        .ingredients,
+        .instructions {
+            margin: 20px 0;
+        }
+
+        .ingredients ul,
+        .instructions ol {
+            margin: 0;
+            padding: 0;
+        }
+
+        .ingredients li,
+        .instructions li {
+            margin-bottom: 10px;
+        }
+
+        .ingredients li::before {
+            content: "• ";
+            color: #ff6347;
+            /* Color de punto */
+        }
+
+        .instructions li::before {
+            content: counter(list-item) ". ";
+            color: #ff6347;
+            /* Color de número */
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Recetas de Cocina</h1>
+    </header>
+
+    <div class="container">
+        <!-- Receta 1 -->
+        <div class="recipe">
+            <h2>Paella Valenciana</h2>
+            <img src="https://www.johaprato.com/files/styles/flexslider_full/public/paella_valenciana.jpg?itok=mTseo4VW" alt="Paella Valenciana">
+            <div class="ingredients">
+                <h3>Ingredientes:</h3>
+                <ul>
+                    <li>300 g de arroz</li>
+                    <li>200 g de pollo</li>
+                    <li>150 g de judías verdes</li>
+                    <li>1 pimiento rojo</li>
+                    <li>2 tomates</li>
+                    <li>1 litro de caldo de pollo</li>
+                    <li>Azafrán</li>
+                    <li>Sal y pimienta al gusto</li>
+                </ul>
+            </div>
+            <div class="instructions">
+                <h3>Instrucciones:</h3>
+                <ol>
+                    <li>Calienta aceite en una paellera y añade el pollo. Cocina hasta que esté dorado.</li>
+                    <li>Agrega las judías verdes y el pimiento rojo cortado en tiras. Cocina por 5 minutos.</li>
+                    <li>Incorpora los tomates rallados y cocina hasta que se reduzcan.</li>
+                    <li>Agrega el arroz y mezcla bien. Vierte el caldo caliente y el azafrán.</li>
+                    <li>Cocina a fuego medio hasta que el arroz esté hecho y el líquido se haya absorbido.</li>
+                    <li>Deja reposar unos minutos antes de servir.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Receta 2 -->
+        <div class="recipe">
+            <h2>Tacos al Pastor</h2>
+            <img src="https://i.blogs.es/95b0b1/como-hacer-tacos-pastor-sin-trompo-drake-bell-mexico/650_1200.jpg" alt="Tacos al Pastor">
+            <div class="ingredients">
+                <h3>Ingredientes:</h3>
+                <ul>
+                    <li>500 g de carne de cerdo</li>
+                    <li>100 g de piña</li>
+                    <li>2 dientes de ajo</li>
+                    <li>1 cucharadita de achiote</li>
+                    <li>1 cucharadita de comino</li>
+                    <li>1 cucharadita de paprika</li>
+                    <li>Sal y pimienta al gusto</li>
+                    <li>Tortillas de maíz</li>
+                    <li>Limón, cebolla y cilantro para servir</li>
+                </ul>
+            </div>
+            <div class="instructions">
+                <h3>Instrucciones:</h3>
+                <ol>
+                    <li>Marina la carne con el achiote, comino, paprika, ajo, sal y pimienta. Deja reposar por al menos
+                        2 horas.</li>
+                    <li>Asa la carne en una parrilla caliente hasta que esté bien cocida. Corta en trozos pequeños.</li>
+                    <li>Asa la piña y corta en pequeños trozos.</li>
+                    <li>Calienta las tortillas y rellena con la carne y la piña.</li>
+                    <li>Sirve con limón, cebolla y cilantro al gusto.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Agrega más recetas aquí -->
+    </div>
+</body>
+
+</html>

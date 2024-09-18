@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Restaurante</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #7067ac;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .menu-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #6499b8;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(63, 65, 113, 0.1);
+
+            /* FlexBox properties */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .category {
+            flex-basis: calc(33.33% - 20px);
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #d1dfc3;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-title {
+            font-size: 24px;
+            color: #093663;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .item {
+            margin-bottom: 15px;
+        }
+
+        .item-name {
+            font-weight: bold;
+            color: #9b483f;
+        }
+
+        .item-price {
+            float: right;
+            color: #0b6731;
+        }
+
+        .item-description {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Menú de Restaurante</h1>
+
+    <div class="menu-container">
+        <div class="category">
+            <h2 class="category-title">Entradas</h2>
+            <div class="item">
+                <span class="item-name">Ensalada César</span>
+                <span class="item-price">$8000mil</span>
+                <p class="item-description">Lechuga, crutones, queso parmesano y aderezo César.</p>
+            </div>
+            <div class="item">
+                <span class="item-name">Sopa del día</span>
+                <span class="item-price">$5000</span>
+                <p class="item-description">Pregunta por nuestra sopa casera del día.</p>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2 class="category-title">Platos Principales</h2>
+            <div class="item">
+                <span class="item-name">Filete de salmón</span>
+                <span class="item-price">$18000mil</span>
+                <p class="item-description">Salmón a la parrilla con salsa de limón y hierbas.</p>
+            </div>
+            <div class="item">
+                <span class="item-name">Pasta bolañesa</span>
+                <span class="item-price">$16000mil</span>
+                <p class="item-description">Fettuccine en salsa cremosa de queso parmesano.</p>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2 class="category-title">Postres</h2>
+            <div class="item">
+                <span class="item-name">Tiramisú</span>
+                <span class="item-price">$7000mil</span>
+                <p class="item-description">Clásico postre italiano con café y mascarpone.</p>
+            </div>
+            <div class="item">
+                <span class="item-name">Cheesecake</span>
+                <span class="item-price">$6000mil </span>
+                <p class="item-description">Tarta de queso cremosa con salsa de frutos rojos.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

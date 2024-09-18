@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas de Cocina</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Estilo para la barra de navegación horizontal */
+        .nav-horizontal {
+            background-color: #ff6347;
+            /* Color de fondo */
+            overflow: hidden;
+        }
+
+        .nav-horizontal ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-horizontal ul li {
+            margin: 0 20px;
+        }
+
+        .nav-horizontal ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-horizontal ul li a:hover {
+            background-color: #ffa07a;
+            /* Efecto hover */
+            color: #333;
+            transition: background-color 0.3s;
+        }
+
+        /* Estilo para la barra de navegación vertical */
+        .nav-vertical {
+            background-color: #ff6347;
+            /* Color de fondo */
+            padding: 20px;
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: none;
+            /* Oculta la barra vertical inicialmente */
+        }
+
+        .nav-vertical ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-vertical ul li {
+            margin-bottom: 20px;
+        }
+
+        .nav-vertical ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .nav-vertical ul li a:hover {
+            background-color: #ffa07a;
+            /* Efecto hover */
+            color: #333;
+            transition: background-color 0.3s;
+        }
+
+        /* Contenido de la página */
+        .content {
+            margin-left: 220px;
+            /* Espacio para la barra vertical */
+            padding: 20px;
+        }
+
+        /* Mostrar barra vertical en pantallas pequeñas y ocultar barra horizontal */
+        @media (max-width: 768px) {
+            .nav-horizontal {
+                display: none;
+                /* Oculta la barra horizontal en pantallas pequeñas */
+            }
+
+            .nav-vertical {
+                display: block;
+                /* Muestra la barra vertical en pantallas pequeñas */
+            }
+
+            .content {
+                margin-left: 0;
+                /* Ajusta el margen para contenido en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra de navegación horizontal -->
+    <nav class="nav-horizontal">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#recetas">Recetas</a></li>
+            <li><a href="#categorias">Categorías</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Barra de navegación vertical -->
+    <nav class="nav-vertical">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="recetacoci1.html ">Recetas</a></li>
+            <li><a href="#categorias">Categorías</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido de la página -->
+    <div class="content">
+        <h1>Bienvenido a Recetas de Cocina</h1>
+        <p>Aquí encontrarás una variedad de recetas deliciosas para todos los gustos.</p>
+        <!-- Puedes agregar más contenido aquí -->
+    </div>
+</body>
+
+</html>
